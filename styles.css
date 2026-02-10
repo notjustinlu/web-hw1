@@ -1,0 +1,352 @@
+/* ========================================
+   CSS Reset & Base Styles
+   ======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Rule 1: Body and Typography */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Rule 2: Container for Content Width */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ========================================
+   Navigation Bar
+   ======================================== */
+
+/* Rule 3: Navigation Styling */
+.navbar {
+    background-color: #6B5B95;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.nav-menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
+}
+
+.nav-menu li a:hover {
+    color: #E8926F;
+}
+
+/* ========================================
+   Profile Section
+   ======================================== */
+
+/* Rule 4: Profile Section Layout */
+.profile-section {
+    background: linear-gradient(135deg, #6B5B95 0%, #8B7BA8 100%);
+    color: #ffffff;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.profile-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.profile-section h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.profile-tagline {
+    font-size: 1.2rem;
+    opacity: 0.95;
+    font-style: italic;
+}
+
+/* ========================================
+   About Me Section
+   ======================================== */
+
+/* Rule 5: About Section Styling */
+.about-section {
+    background-color: #ffffff;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.2rem;
+    color: #6B5B95;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+/* ========================================
+   Coursework Section
+   ======================================== */
+
+.coursework-section {
+    background-color: #FDF6F0;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.coursework-section h2 {
+    font-size: 2.2rem;
+    color: #E8926F;
+    margin-bottom: 2.5rem;
+    font-weight: 600;
+}
+
+.coursework-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.course-card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.course-card h3 {
+    font-size: 1.5rem;
+    color: #6B5B95;
+    margin-bottom: 1rem;
+}
+
+.course-card p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* ========================================
+   Hobbies Section
+   ======================================== */
+
+.hobbies-section {
+    background-color: #ffffff;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hobbies-section h2 {
+    font-size: 2.2rem;
+    color: #6B5B95;
+    margin-bottom: 2.5rem;
+    font-weight: 600;
+}
+
+.hobbies-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.hobby-item {
+    background-color: #F9F7FC;
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 4px solid #E8926F;
+}
+
+.hobby-item h3 {
+    font-size: 1.4rem;
+    color: #E8926F;
+    margin-bottom: 1rem;
+}
+
+.hobby-item p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* ========================================
+   Contact Section
+   ======================================== */
+
+.contact-section {
+    background-color: #E8926F;
+    color: #ffffff;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.contact-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.contact-link:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* ========================================
+   Footer
+   ======================================== */
+
+.footer {
+    background-color: #6B5B95;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.footer p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+/* ========================================
+   Responsive Design - Mobile
+   ======================================== */
+
+@media (max-width: 768px) {
+    .profile-section h1 {
+        font-size: 2rem;
+    }
+
+    .profile-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .profile-tagline {
+        font-size: 1rem;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .nav-menu {
+        gap: 1rem;
+    }
+
+    .nav-menu li a {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    .about-section h2,
+    .coursework-section h2,
+    .hobbies-section h2,
+    .contact-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .coursework-grid,
+    .hobbies-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .profile-section,
+    .about-section,
+    .coursework-section,
+    .hobbies-section,
+    .contact-section {
+        padding: 3rem 0;
+    }
+}
